@@ -1,0 +1,81 @@
+/* 
+    Color Pallete
+    #0a100d Black
+    #b9baa3 White
+    #d6d5c9 White
+    #a22c29 Red
+    #902923 Red
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.blackBg {
+  background-color: #0a100d;
+}
+
+.redBg {
+  background-color: #a22c29;
+}
+
+.whiteBg {
+  background-color: #b9baa3;
+}
+
+.blackFg {
+  color: #0a100d;
+}
+
+.redFg {
+  color: #a22c29;
+}
+
+.whiteFg {
+  color: #b9baa3;
+}
+
+.banner {
+  width: 33vw;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.clearLeft {
+  clear: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+.clearNone {
+  clear: none;
+}
+
+.clearRight {
+  clear: right;
+}
+
+.clearBoth {
+  clear: both;
+}
+
+.windowWidth {
+  box-sizing: border-box;
+  border: 3px solid black;
+  width: 100vw;
+  height: 30vh;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.column {
+  width: 33.33%;
+  height: 100vh;
+}

@@ -1,0 +1,62 @@
+/*In CSS this is a comment*/
+/*In CSS, this is called a Rule:*/
+h3 {
+  color: darkorange;
+  font-size: 125%;
+}
+/*A rule is conformed by*/
+h1 {
+  /*Selector*/
+  /* Declaration Block */
+  /*  Declaration ->
+  Property : Value ; */
+  color: blue;
+}
+
+/* This rule groups h2 and p */
+h2,
+p {
+  color: #cd7ae2;
+}
+
+/* This rule gets id */
+/* Id's should be unique, only used one per page */
+#heading {
+  color: #ff00aa;
+  background: black;
+}
+
+#footing {
+  color: #000000;
+  background: #ff00aa;
+}
+
+/* This rule gets a class */
+/* Classes should be reused in different places  */
+.ClassOne {
+  color: #b12d2d;
+}
+.ClassTwo {
+  color: #26c926;
+}
+
+/* This is a set of rules for a mixture of styles in a single element */
+#TitleID {
+  font-size: 200%;
+}
+
+.CenterClass {
+  text-align: center;
+}
+
+.UpperCaseClass {
+  text-transform: uppercase;
+}
+
+.BlackBackgroundClass {
+  background: #000000;
+}
+
+div {
+  background: #352525;
+}

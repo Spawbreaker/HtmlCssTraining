@@ -1,0 +1,56 @@
+/* 
+    Color Pallete
+    #0a100d Black
+    #b9baa3 White
+    #d6d5c9 White
+    #a22c29 Red
+    #902923 Red
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #902923;
+  color: #b9baa3;
+  text-align: center;
+}
+div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  color: #a22c29;
+  /* color: -webkit-linear-gradient(#902923, #a22c29); */
+  text-shadow: 0rem 0rem 10px #0a100d, 0rem 0rem 10px #0a100d,
+    0rem 0rem 10px #0a100d, 0rem 0rem 10px #0a100d;
+}
+
+.big-img {
+  background: linear-gradient(0deg, #902823, #a22b2925), url("../img/red.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: 33%;
+  background-attachment: fixed;
+}
+
+.small-img {
+  background: url("../img/river_background_small.jpg");
+  /* color: linear-gradient(10deg, #902923, #d6d5c9, #0a100d); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bearText {
+  font-size: 20rem;
+  font-weight: bold;
+  background: url("../img/bear_1.jpeg");
+  background-position-x: -285px;
+  background-size: cover;
+  text-shadow: none;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
