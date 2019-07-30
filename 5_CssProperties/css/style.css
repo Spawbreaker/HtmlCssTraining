@@ -79,3 +79,70 @@
   width: 33.33%;
   height: 100vh;
 }
+
+.staticPosition {
+  position: static;
+  /* Done by default */
+}
+
+.relativePosition {
+  position: relative;
+  /* The position is relative to the original point where the item used to be on. */
+}
+
+.absolutePosition {
+  position: absolute;
+  /* It positions itself absolutely on the last parent with a position defined.
+  The top-most defined is the body. */
+}
+
+.fixedPosition {
+  position: fixed;
+  /* The item will stay fixed somewhere on the screen, regardless of scrolling.
+  It's useful for navigation bars. */
+}
+
+.testPosition {
+  background: #a22c29;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+}
+
+.zImg {
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  /* z-index allows us to put things back and forth on the screen
+  It only works on fixed, absolute and relative, not with static */
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    background: #0a100d;
+    color: #b9baa3;
+  }
+}
+
+p::before {
+  content: "This is inserted ";
+  border: 4px #902923 solid;
+}
+p::after {
+  /* The 'content' attribute is required, always */
+  content: " this is inserted.";
+  display: block;
+  border: 4px #0a100d solid;
+}
+
+.imgHolder {
+  width: calc(100vw - 10px);
+  border: #902923 5px dashed;
+}
+
+img {
+  width: 100%;
+  display: block;
+}

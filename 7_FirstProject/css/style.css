@@ -1,0 +1,14 @@
+:root {
+  --pBlack: #0a100d;
+  --pDarkWhite: #b9baa3;
+  --pClearWhite: #d6d5c9;
+  --pClearRed: #a22c29;
+  --pDarkRed: #902923;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--pDarkWhite);
+  color: var(--pBlack);
+}

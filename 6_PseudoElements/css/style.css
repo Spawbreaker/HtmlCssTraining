@@ -1,0 +1,183 @@
+/* 
+    Color Pallete
+    #0a100d Black
+    #b9baa3 White
+    #d6d5c9 White
+    #a22c29 Red
+    #902923 Red
+*/
+:root {
+  --palleteBlack: #0a100d;
+  --palleteWhiteOne: #b9baa3;
+  --palleteWhiteTwo: #d6d5c9;
+  --palleteRedOne: #a22c29;
+  --palleteRedTwo: #902923;
+}
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+/* h1 is a descendant for div */
+div h1 {
+  color: var(--palleteBlack);
+}
+/* h1 is a children of div*/
+div > h1 {
+  color: var(--palleteRedOne);
+}
+
+.header h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.header h1::first-letter {
+  font-size: 10rem;
+}
+
+.header h1:hover {
+  background: var(--palleteWhiteOne);
+}
+
+:root {
+  background: var(--palleteWhiteOne);
+  font-size: 3px;
+}
+
+.abs {
+  font-size: 24px;
+}
+
+.rsp {
+  font-size: 1.5rem;
+}
+
+.rsp:hover {
+  -webkit-transform: rotateY(-45deg);
+  transform: rotateY(-45deg);
+  -webkit-transform: skewY(-25deg);
+  transform: skewY(-25deg);
+  color: var(--palleteRedOne);
+  -webkit-transition-property: color, -webkit-transform;
+  transition-property: color, -webkit-transform;
+  transition-property: color, transform;
+  transition-property: color, transform, -webkit-transform;
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.magicSquare {
+  width: 200px;
+  height: 200px;
+  background: var(--palleteBlack);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.magicSquare:hover {
+  border-radius: 50%;
+  background: var(--palleteRedOne);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.animatedSquare {
+  width: 200px;
+  height: 200px;
+  background: #0a100d;
+}
+
+.animatedSquare:hover {
+  -webkit-animation: magicalSquare 5s infinite;
+  animation: magicalSquare 5s infinite;
+  -webkit-animation-name: magicalSquare;
+  animation-name: magicalSquare;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes magicalSquare {
+  0% {
+    background: #0a100d;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  50% {
+    background: #a22c29;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  75% {
+    background: #0a100d;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    /* transform: translateX(100px); */
+  }
+}
+
+@keyframes magicalSquare {
+  0% {
+    background: #0a100d;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  50% {
+    background: #a22c29;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  75% {
+    background: #0a100d;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+    /* transform: translateX(100px); */
+  }
+}
+
+.autoAnimation {
+  -webkit-animation: move 5s 1;
+  animation: move 5s 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1.5); */
+}
+
+@-webkit-keyframes move {
+  50% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* background: var(--palleteRedOne); */
+    background: #d6d5c9;
+  }
+  100% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+
+@keyframes move {
+  50% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* background: var(--palleteRedOne); */
+    background: #d6d5c9;
+  }
+  100% {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+}
+
+.fa-icicles {
+  color: #902923;
+  font-size: 200%;
+}
