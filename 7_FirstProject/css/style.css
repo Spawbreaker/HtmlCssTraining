@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Merriweather&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower|Merriweather&display=swap");
 
 :root {
   --pBlack: #0a100d;
@@ -6,8 +6,8 @@
   --pClearWhite: #d6d5c9;
   --pClearRed: #a22c29;
   --pDarkRed: #902923;
-  --fancyFont: 'Indie Flower', cursive;
-  --mainTransition: all 0.3s ease-in-out; 
+  --fancyFont: "Indie Flower", cursive;
+  --mainTransition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,12 +15,11 @@ body {
   padding: 0;
   background: var(--pDarkWhite);
   color: var(--pBlack);
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   overflow-x: hidden;
-  
 }
 
-#title{  
+#title {
   font-size: 4rem;
   font-family: var(--fancyFont);
   letter-spacing: 0.7rem;
@@ -29,60 +28,72 @@ body {
   animation: slideLeft 2s ease-in-out 1;
 }
 
-.longspacing{
+.longspacing {
   letter-spacing: 2rem;
 }
 
 /* Utilities */
-a{
+a {
   text-decoration: none;
 }
-.text-red{
+.text-red {
   color: var(--pClearRed);
 }
 
-.text-center{
+.text-white {
+  color: var(--pClearWhite);
+}
+
+.text-center {
   text-align: center;
 }
 
-.clearFix::before, .clearFix::after{
-  content:"";
+.clearFix::before,
+.clearFix::after {
+  content: "";
   float: none;
+  clear: both;
   display: table;
 }
-/* /Utilities */
+.title-font {
+  font-family: var(--fancyFont);
+  letter-spacing: 0.7rem;
+}
 
+/* /Utilities */
 
 /* Header */
 
-.header{
+.header {
   min-width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(0deg, var(--pClearWhite), #d6d5c971), url(../img/main-background.jpg) center/cover no-repeat fixed;
+  background: linear-gradient(0deg, var(--pClearWhite), #d6d5c971),
+    url(../img/main-background.jpg) center/cover no-repeat fixed;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 1px 10px #0a100d  ;
+  box-shadow: 0px 1px 10px #0a100d;
 }
 
-.banner{
+.banner {
   position: absolute;
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: translate(-50%,-75%)
+  transform: translate(-50%, -75%);
 }
 
-.subtitle{
+.subtitle {
   display: inline-block;
   letter-spacing: 1rem;
   color: var(--pClearWhite);
   background: var(--pBlack);
   position: absolute;
-  margin:  -100px 0px 0px -75px;
+  margin: -100px 0px 0px -75px;
   animation: slideRight 2s ease-in-out 1;
 }
 
-.navBtn{
+.navBtn,
+.main-button {
   display: inline-block;
   text-decoration: none;
   color: var(--pClearWhite);
@@ -91,10 +102,13 @@ a{
   outline: 5px solid var(--pDarkRed);
   outline-offset: 5px;
   transition: var(--mainTransition);
+}
+.navBtn {
   margin-top: 50px;
   animation: fadeIn 2s ease-in-out 1;
 }
-.navBtn:hover{
+.navBtn:hover,
+.main-button:hover {
   background: var(--pClearRed);
   outline: 5px solid var(--pClearRed);
   outline-offset: 10px;
@@ -103,40 +117,40 @@ a{
 
 /* Animation */
 
-@keyframes slideLeft{
-  0%{
+@keyframes slideLeft {
+  0% {
     transform: translateX(-100vw);
   }
-  75%{
+  75% {
     transform: translate(10vw);
   }
-  88%{
+  88% {
     transform: translate(-2vw);
   }
-  100%{
+  100% {
     transform: translateX(0vw);
   }
 }
-@keyframes slideRight{
-  0%{
+@keyframes slideRight {
+  0% {
     transform: translateX(100vw);
   }
-  75%{
+  75% {
     transform: translate(-10vw);
   }
-  88%{
+  88% {
     transform: translate(2vw);
   }
-  100%{
+  100% {
     transform: translateX(0vw);
   }
 }
-@keyframes fadeIn{
-  0%{
+@keyframes fadeIn {
+  0% {
     opacity: 0;
     transform: scale(2);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -146,26 +160,46 @@ a{
 
 /* Content Divider */
 
-.contentDivider{
-
+.contentDivider {
   width: 100vw;
   height: 20px;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#902923+0,a22c29+15,d6d5c9+50,a22c29+85,902923+100 */
   background: #902923; /* Old browsers */
-  background: -moz-linear-gradient(left,  #902923 0%, #a22c29 15%, #d6d5c9 50%, #a22c29 85%, #902923 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left,  #902923 0%,#a22c29 15%,#d6d5c9 50%,#a22c29 85%,#902923 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right,  #902923 0%,#a22c29 15%,#d6d5c9 50%,#a22c29 85%,#902923 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    left,
+    #902923 0%,
+    #a22c29 15%,
+    #d6d5c9 50%,
+    #a22c29 85%,
+    #902923 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    #902923 0%,
+    #a22c29 15%,
+    #d6d5c9 50%,
+    #a22c29 85%,
+    #902923 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    #902923 0%,
+    #a22c29 15%,
+    #d6d5c9 50%,
+    #a22c29 85%,
+    #902923 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#902923', endColorstr='#902923',GradientType=1 );
 }
 
 /* Skills section */
 
-.skills{
-  max-width: 100%;    
+.skills {
+  max-width: 100%;
 }
 
-.skill{
+.skill {
   width: 100%;
   height: 250px;
   float: none;
@@ -173,66 +207,186 @@ a{
   transition: var(--mainTransition);
 }
 
-.skill-icon{
+.skill-icon {
   display: inline-block;
   margin: 10px 0px 20px 0px;
 }
 
-.skill-title{
+.skill-title {
   display: block;
   font-size: 1.5rem;
   letter-spacing: 0.75rem;
-  
+
   margin-bottom: 2rem;
 }
 
-.skill-description{
+.skill-description {
   /* max-width: 15rem; */
   min-width: 10rem;
   margin: 0 auto;
 }
 
-.skill:hover{
+.skill:hover {
   background: var(--pDarkRed);
 }
 
-.skill:hover .skill-title{
+.skill:hover .skill-title {
   color: var(--pDarkWhite);
   text-shadow: 0px 0px 3px var(--pClearRed);
 }
-.skill:hover .skill-description{
+.skill:hover .skill-description {
   color: var(--pDarkWhite);
 }
 
-@media screen and (min-width:576px){
-  .skill{
+@media screen and (min-width: 576px) {
+  .skill {
     float: left;
     width: 50%;
   }
 }
-@media screen and (min-width:1000px){
-  .skill{
+@media screen and (min-width: 1000px) {
+  .skill {
     float: left;
     width: 25%;
   }
 }
 /* /Skills */
 /* About */
-.section-center{
-  padding: 550px 0px;
+.section-center {
+  padding: 50px 0px;
   width: 80vw;
   margin: 0 auto;
   max-width: 1170px;
 }
 
-.about-img-container{
+.about-img-container {
   width: 100%;
+  border: var(--pClearRed) 10px solid;
+  border-radius: 2em 0em 2em 0em;
+  background: var(--pClearRed);
   overflow: hidden;
-
 }
-.about-img{
+.about-img {
   width: 100%;
   display: block;
+  transition: var(--mainTransition);
+}
+.about-img-container:hover .about-img {
+  opacity: 0.75;
+  transform: scale(1.1);
+}
+.two-column {
+  width: 96%;
+  margin: 0px 2% 25px 2%;
+  float: none;
+  position: relative;
+}
+
+.section-header {
+  margin: 0px;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+}
+
+.about-info {
+  display: inline-block;
+  max-width: 34rem;
+  text-indent: 2rem;
+
+  margin: 0px 1rem;
+}
+.about-btn {
+  display: block;
+  text-align: center;
+  margin: 25px auto;
+}
+@media screen and (min-width: 1000px) {
+  .two-column {
+    width: 40%;
+    margin: 5%;
+    float: left;
+  }
+  .about {
+    height: 480px;
+  }
 }
 
 /* /About */
+
+/* Products */
+
+.products {
+  background: var(--pBlack);
+}
+
+.product-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+
+.product {
+  padding: 2rem 0;
+  width: 100%;
+  float: none;
+}
+
+.product-img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.product-btn {
+  display: block;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.product-title {
+  font-size: 2rem;
+  font-family: var(--fancyFont);
+  letter-spacing: 0.3rem;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  margin-top: 4px;
+  letter-spacing: 0.3rem;
+}
+
+@media screen and (min-width: 785px) {
+  .product {
+    float: left;
+    width: 45%;
+    padding: 2rem 2.5%;
+  }
+  .products-info {
+    padding: 2rem 2.5%;
+  }
+}
+@media screen and (min-width: 935px) {
+  .product {
+    float: left;
+    width: 31%;
+    padding: 2rem 1.16%;
+  }
+  .products-info {
+    padding: 2rem 2.5%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .products-info {
+    float: left;
+    width: 28%;
+    margin-right: 2%;
+    padding: 2rem 0;
+  }
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+}
+
+/* /Products */
