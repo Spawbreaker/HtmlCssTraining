@@ -6,12 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./css/all.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/navbar.js"></script>
     <title>The Burgerie</title>
   </head>
   <body>
     <!-- Nav Button -->
+    <span class="nav-btn" id="nav-btn" onclick="openNavbar()">
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- /Nav Button -->
     <!-- Nav Bar -->
-
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close" onclick="closeNavbar()">
+          <i class="fas fa-times"></i>
+        </span>
+      </div>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="./index.html">Home</a></li>
+        <li class="nav-item"><a href="./skills.html">Skills</a></li>
+        <li class="nav-item"><a href="./about.html">About</a></li>
+        <li class="nav-item"><a href="./products.html">Products</a></li>
+      </ul>
+    </nav>
+    <!-- /Nav Bar -->
     <!-- Header -->
     <div class="header">
       <div class="banner">
@@ -20,9 +38,9 @@
         <p class="subtitle">A burger shop</p>
         <a
           class="navBtn"
-          href="http://"
+          href="#"
           target="_blank"
-          rel="noopener noreferrer"
+          
           >Explore</a
         >
       </div>
@@ -95,9 +113,9 @@
             </p>
             <a
               class="main-button about-btn"
-              href="http://"
+              href="./about.html"
               target="_blank"
-              rel="noopener noreferrer"
+              
               >Learn More</a
             >
           </article>
@@ -117,9 +135,9 @@
             </h3>
             <a
               class="main-button product-btn"
-              href="http://"
+              href="#"
               target="_blank"
-              rel="noopener noreferrer"
+              
               >Inventory</a
             >
           </article>
@@ -154,7 +172,79 @@
       </div>
     </div>
     <!-- /Products -->
-
+    <!-- Contact form -->
+    <section class="contact">
+      <div class="section-center clearFix">
+        <article class="contact-info">
+          <div class="contact-item">
+            <h3 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-couch fa-1x"></i>
+              </span>
+              Address
+              <span class="contact-icon">                
+                <i class="fas fa-angle-double-right fa-1x"></i>
+              </span>
+            </h3>
+            <h3 class="contact-text">
+              3271 Small Street New York, New York(NY), 10016
+            </h3>
+          </div>
+          <div class="contact-item">
+            <h3 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-envelope fa-1x"></i>
+              </span>
+              Email
+              <span class="contact-icon">                
+                <i class="fas fa-angle-double-right fa-1x"></i>
+              </span>
+            </h3>
+            <h3 class="contact-text">
+              chadd.bashiri@gmail.com
+            </h3>
+          </div>
+          <div class="contact-item">
+            <h3 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-comment-dots fa-1x"></i>
+              </span>
+              Phone
+              <span class="contact-icon">                
+                <i class="fas fa-angle-double-right fa-1x"></i>
+              </span>
+            </h3>
+            <h3 class="contact-text">
+              212-856-3770
+            </h3>          
+          </div>
+        </article>
+        <article class="contact-form">
+          <form action="https://formspree.io/rfigueroa@intersysconsulting.com" method="POST" class="form-group">
+            <input type="text" name="name" placeholder="name" class="form-control"/>
+            <input type="email" name="email"  placeholder="email" class="form-control"/>            
+            <textarea name="message" rows="5" placeholder="message" class="form-control"></textarea>
+            <div class="contact-extra-padding"></div>
+            <button class="main-button contact-button">Send</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <!-- /Contact form -->
     <!-- /Content -->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="footer-text">
+          <span class="title-font">The Burgerie</span>&copy;All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- /Footer -->
   </body>
 </html>
